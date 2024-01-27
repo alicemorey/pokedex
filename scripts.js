@@ -24,16 +24,7 @@ let pokemonList = [
         abilities: ['static','lightningrod']
     }
 ]
-
-for (let i=0; i<pokemon.length; i++) {
-    document.write (pokemonList (i).name + ' (height:' pokemonList (i).height +')');
-    if (pokemonList(i).height<=1.0) {
-        document.write ('<br>');
-    }else{
-        document.write ('That is a big pokemon!');
-        document.write ('<br>');
-    
-    }
-
-    
+for (let i = 0; i < pokemonList.length; i++){
+document.write("<p>" + pokemonList[i].name + "</p>");
+  
 }
