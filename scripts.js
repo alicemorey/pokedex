@@ -1,14 +1,6 @@
 
-//forEach()
-//pokemonList.forEach(function(pokemonList) {
-    //document.write(pokemonList.name + 'is'+ pokemonList.height + ""+ 'high'+ '<br>');
-  //});
-
-// IIFE 
-
-
-let pokemonRepository = (function(){
-let pokemonList = [
+var pokemonRepository = (function(){
+    let repository = [
     {
         name: 'Squirtle',
         height: 0.5,
@@ -32,22 +24,44 @@ let pokemonList = [
         height: 0.4 ,
         type: ['electric','ground'],
         abilities: ['static','lightningrod']
-    }
+    },
 ];
 
-return {
-    add: function (pokemon) {
-        pokemonList.push(pokemon);    
+function add (pokemon) {
+ if ( 
+    typeof pokemon === 'object'&&
+    "name" in pokemon &&
+    "height" in pokemon &&
+    "types" in pokemon
+ ) {
+    repository.push (pokemon);
+ } else {
+    console.log ("pokemon is not correct")
     }
-    getAll: function (){
-        return pokemonList;
-    }
-};
+ }
+ function getAll() {
+    return repository;
+ }
+ return {
+    add: add,
+    getAll: getAll,
+ }; 
 })();
-console.log(pokemonRepository.getAll ());
-pokemonRepository.add ({name: 'Squirtle'});
+
+console.log (pokemonRepository.getAll());
+pokemonRepository.add ({name: "Pikachu", height: 0.3, types: ["electric"]});
+
 console.log (pokemonRepository.getAll());
 
+pokemonRepository.getAll().forEach (function (pokemon) {
+    let pokemonList = document.querySelector(".pokemon-list");
+    let listpokemon = document.createElement ("li");
+    let button =document.createElement("button");
+    button.innerText = pokemon.name;
+    button.classList.add("button-class");
+    listpokemon.appendChild(button);
+    pokemonList.appendChild (listpokemon);
+});
 
 
 
