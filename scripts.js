@@ -1,4 +1,13 @@
-// pokemon list
+
+//forEach()
+//pokemonList.forEach(function(pokemonList) {
+    //document.write(pokemonList.name + 'is'+ pokemonList.height + ""+ 'high'+ '<br>');
+  //});
+
+// IIFE 
+
+
+let pokemonRepository = (function(){
 let pokemonList = [
     {
         name: 'Squirtle',
@@ -24,26 +33,21 @@ let pokemonList = [
         type: ['electric','ground'],
         abilities: ['static','lightningrod']
     }
-]
+];
 
-//forEach()
-pokemonList.forEach(function(pokemonList) {
-    document.write(pokemonList.name + 'is'+ pokemonList.height + ""+ 'high'+ '<br>');
-  });
+return {
+    add: function (pokemon) {
+        pokemonList.push(pokemon);    
+    }
+    getAll: function (){
+        return pokemonList;
+    }
+};
+})();
+console.log(pokemonRepository.getAll ());
+pokemonRepository.add ({name: 'Squirtle'});
+console.log (pokemonRepository.getAll());
 
- //loop pokemonList + height
-//for (let i = 0; i < pokemonList.length; i++){
-//document.write("<p>" + pokemonList[i].name +':'+ pokemonList [i].height +':'+ pokemonList [i]. type + "</p>");
-//}
-
-// special character list
-//if (pokemonList[i].height >= 1.0) 
-//document.write( "That\'s a big pokemon!")
-
-//if (pokemonList[i].height <= 1.0) {
-  //  document.write('That is a small pokemon!' , pokemonList);
-    //}else{
-      //  document.write('That\'s a big pokemon!');}
 
 
 
