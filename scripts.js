@@ -1,3 +1,4 @@
+// pokemon list
 let pokemonList = [
     {
         name: 'Squirtle',
@@ -24,11 +25,28 @@ let pokemonList = [
         abilities: ['static','lightningrod']
     }
 ]
-for (let i = 0; i < pokemonList.length; i++){
-document.write("<p>" + pokemonList[i].name + "</p>");
-}
-if (pokemonList[i].height <= 1.0) {
-}
-else{
-    document.write('That\'s a big pokemon!');
-} 
+
+//forEach()
+pokemonList.forEach(function(pokemonList) {
+    document.write(pokemonList.name + 'is'+ pokemonList.height + ""+ 'high'+ '<br>');
+  });
+
+ //loop pokemonList + height
+//for (let i = 0; i < pokemonList.length; i++){
+//document.write("<p>" + pokemonList[i].name +':'+ pokemonList [i].height +':'+ pokemonList [i]. type + "</p>");
+//}
+
+// special character list
+//if (pokemonList[i].height >= 1.0) 
+//document.write( "That\'s a big pokemon!")
+
+//if (pokemonList[i].height <= 1.0) {
+  //  document.write('That is a small pokemon!' , pokemonList);
+    //}else{
+      //  document.write('That\'s a big pokemon!');}
+
+
+
+
+
+
