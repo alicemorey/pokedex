@@ -3,22 +3,18 @@ body {
     display: inline-flex;
     font: "Montserrat", sans-serif ;
     font-size: 25px;
+    background-color: lightblue;
 }
 h1 {
   display: block;
   font: "Montserrat", sans-serif ;
   font-size: 30px;
-  color: aquamarine;
-}
-
-main {
-  color: orange;
+  color: rgb(137, 150, 146);
 }
 
 .button-class {
     background-color: blueviolet;
     border: 2px;
-    color: red;
     padding: 16px 32px;
     text-align: right;
     display: inline-block;
@@ -26,9 +22,9 @@ main {
     -webkit-transition-duration: 0.6s;
     transition-duration: 0.3s;
     cursor: pointer;
-    background-color: blue;
+    background-color: rgb(166, 166, 222);
     color: beige;
-    border: 2px solid red;
+    border: 2px solid #efb6b6;
 }
 
 .extra-content,

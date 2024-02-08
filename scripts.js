@@ -53,6 +53,14 @@ function add (pokemon) {
     pokemonList.appendChild (listpokemon);
 }
 
+let button =document.querySelector ('button');
+button.addEventListener ('click', function (event){
+target.classList.toggle ('pokemon-list');
+});
+
+
+
+
  return {
     add: add,
     getAll: getAll,
