@@ -40,6 +40,7 @@ button{
   display: block;
 }
 
+
 @media all and (max-width: 575px) {
   .grid {
     -ms-grid-columns: 1fr;
