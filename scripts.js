@@ -51,7 +51,8 @@ function add (pokemon) {
     button.classList.add("button-class");
     listpokemon.appendChild(button);
     pokemonList.appendChild (listpokemon);
- }
+}
+
  return {
     add: add,
     getAll: getAll,
@@ -65,12 +66,5 @@ pokemonRepository.add ({name: "Pikachu", height: 0.3, types: ["electric"]});
 console.log (pokemonRepository.getAll());
 
 pokemonRepository.getAll().forEach (function (pokemon) {
-   
     pokemonRepository.addListItem(pokemon);
 });
-
-
-
-
-
-

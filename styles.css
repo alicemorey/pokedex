@@ -1,8 +1,18 @@
 
 body { 
-    display: block;
+    display: inline-flex;
     font: "Montserrat", sans-serif ;
     font-size: 25px;
+}
+h1 {
+  display: block;
+  font: "Montserrat", sans-serif ;
+  font-size: 30px;
+  color: aquamarine;
+}
+
+main {
+  color: orange;
 }
 
 .button-class {
@@ -21,3 +31,45 @@ body {
     border: 2px solid red;
 }
 
+.extra-content,
+button{
+  display: none;
+  font: "Montserrat", sans-serif ;
+  font-size: 23px;
+  color: blue;
+
+}
+
+.visible{
+  display: block;
+}
+
+@media all and (max-width: 575px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 575px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (min-width: 750px) and (max-width: 880px) {
+  .grid {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media all and (min-width: 880px) and (max-width: 1250px) {
+  .grid {
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
