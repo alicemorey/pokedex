@@ -42,23 +42,21 @@ function add (pokemon) {
  function getAll() {
     return repository;
  }
+ let button =document.createElement("button");
 
  function addListItem(pokemon){
     let pokemonList = document.querySelector(".pokemon-list");
     let listpokemon = document.createElement ("p");
-    let button =document.createElement("button");
     button.innerText = pokemon.name;
     button.classList.add("button-class");
     listpokemon.appendChild(button);
     pokemonList.appendChild (listpokemon);
 }
 
-let button =document.querySelector ('button');
+document.querySelector("button-class");
 button.addEventListener ('click', function (event){
-target.classList.toggle ('pokemon-list');
+console.log (event.target.innerText);
 });
-
-
 
 
  return {
