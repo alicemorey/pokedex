@@ -1,14 +1,17 @@
 
 body { 
-    display: inline-flex;
+    display:block;
     font: "Montserrat", sans-serif ;
     font-size: 25px;
     background-color: lightblue;
+    text-align: center;
+ 
 }
 h1 {
-  display: block;
+  display: inline-flex;
+  text-align: center;
   font: "Montserrat", sans-serif ;
-  font-size: 30px;
+  font-size: 40px;
   color: rgb(137, 150, 146);
 }
 

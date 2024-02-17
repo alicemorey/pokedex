@@ -83,3 +83,8 @@ pokemonRepository.getAll().forEach (function (pokemon) {
     pokemonRepository.addListItem(pokemon);
 });
 });
+
+var img= document.createElement ("img");
+    img. src="001.png";
+    var src=document.getElementByID ("x");
+    src.appemdChild(img);
