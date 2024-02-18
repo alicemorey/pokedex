@@ -1,6 +1,6 @@
 let pokemonRepository = (function () {
   let pokemonList = [];
-  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=20';
 
  //show details of Pokemon using Modals
  let modalContainer = document.querySelector('#modal-container');
@@ -25,7 +25,7 @@ let pokemonRepository = (function () {
   imageElement.setAttribute("src", img);
   imageElement.setAttribute ("width", "30");
   imageElement.setAttribute ("height", "30");
-  imageElement.setAttribute ("alt", "Pokemon image");
+  imageElement.setAttribute ("alt", "pokemon-img");
 
   modal.appednChild (closeButtonElement);
   modal.appendChild (titleElement);
