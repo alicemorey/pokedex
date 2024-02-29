@@ -15,13 +15,29 @@
     </nav>
   </header>
       <main>
-      <!-- list-group for the ul element -->
-        <div id="pokemon-container" class="list-group">
-      <!-- list-group-item on li elements -->
-          </div>
-      <!-- Button to add items -->
-          <button id="add-item-btn" class="btn btn-primary">Add Item</button>
-      <!-- Modal-->
+  <!-- Main Content -->
+  <div class="container">
+    <div id="pokemon-container" class="row"></div> 
+  </div>
+
+  <!-- Bootstrap Modal -->
+  <div id="modal-container" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Pokemon Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modalBody">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
       
 </main>
 <footer>
