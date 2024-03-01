@@ -19,14 +19,26 @@ body {
   text-align: center; 
 }
 
+#modal-container{
+  container: aquamarine;
+}
+
 /* CSS for buttons */
 .btn-primary {
   margin: 5px; 
-
 }
 
 /* Responsive image */
 .img-fluid {
   max-width: 100%; 
   height: auto; 
+  background-color: bisque;
+}
+
+.row{
+  background-color: rgb(228, 170, 244);
+}
+div#pokemon.container.row{
+  
+  background-color:darkkhaki;
 }
