@@ -8,24 +8,25 @@ body {
 
 /* CSS for modal */
 .modal-dialog {
-  max-width: 600px; /* Set maximum width of the modal dialog */
+  max-width: 600px; 
 }
 
 .modal-content {
-  padding: 20px; /* Add padding inside the modal content */
+  padding: 20px; 
 }
 
 .modal-body {
-  text-align: center; /* Align content in the modal body to center */
+  text-align: center; 
 }
 
 /* CSS for buttons */
 .btn-primary {
-  margin: 5px; /* Add margin around the buttons */
+  margin: 5px; 
+
 }
 
-/* Responsive image styling */
+/* Responsive image */
 .img-fluid {
-  max-width: 100%; /* Ensure images are responsive and don't overflow */
-  height: auto; /* Maintain aspect ratio of images */
+  max-width: 100%; 
+  height: auto; 
 }
