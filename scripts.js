@@ -1,6 +1,6 @@
   let pokemonRepository = (function () {
   let pokemonList = [];
-  let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=80";
+  let apiUrl = "https://pokeapi.co/api/v2/pokemon/?offset=80&limit=80";
   let modalContainer= document.querySelector("#modal-container");
 
  //show details of Pokemon using Modals

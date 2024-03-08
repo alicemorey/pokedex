@@ -42,3 +42,25 @@ body {
 div#pokemon.container.row{
   background-color:darkkhaki;
 }
+
+footer {
+  padding: 5%;
+  margin: 5px;
+  width: 400px;
+  border: var(--secondary-border-properties);
+  display: inline-block;
+  text-align: center;
+}
+
+#github.button2 {
+  font-size: 15px;
+  font: "Montserrat", sans-serif ;
+  color:aquamarine;
+}
+
+.button2 {
+  font-size: 15px;
+  font: "Montserrat", sans-serif ;
+  color:lightblue;
+  background-color: rgb(228, 170, 244);
+}
